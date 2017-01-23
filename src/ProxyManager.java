@@ -48,6 +48,10 @@ public class ProxyManager {
 		return mProxyManager;
 	}
 	
+	public boolean isVerified() {
+		return mVerified;
+	}
+
 	public InetAddress getPublicIP (Document pJoupDocument) throws IOException {
 		if (mPublicIP == null) {
 			System.out.println("Determining public ip...");
